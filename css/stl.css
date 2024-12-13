@@ -1,0 +1,203 @@
+
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+
+}
+
+.word {
+    width: 700px;
+    margin: auto;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-wrap: wrap;
+}
+.word h2 {
+    margin: 0;
+    text-align: center;
+    background-color: #fdfdfd;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.word .game-area{
+    flex: 1;
+    padding: 15px;
+}
+.word  .try{
+    margin: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.word  .try input{
+    margin-right: 8px;
+}
+.word  .try :first-child{
+    width: 50px;
+    margin-right: 0;
+}
+.word  .try input{
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-bottom: 3px solid #333;
+    font-size: 30px;
+    text-align: center;
+}
+.word  .try input:focus{
+    outline: none;
+}
+.word  .try input.rip{
+    background-color: #ff9d07;
+    border: 1px solid #ff9d07;
+    color: #fff;
+}
+.word  .try input.rnp{
+    background-color: #08a788;
+    border: 1px solid #08a788;
+    color: #fff;
+
+}
+.word  .try input.wnp{
+    background-color: #292f44;
+    border: 1px solid #292f44;
+    color: #fff;
+
+}
+.disable{
+    opacity: .5;
+    pointer-events: none;
+}
+.word  .btns{
+    text-align: center;
+    padding: 20px 10px 10px 0;
+}
+.word  .btns button{
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 0 5px;
+    color: #fff;
+    border-radius: 4px;
+}
+.word  .btns .check{
+    background-color: crimson;
+    width: calc((100% - 100px));
+}
+.word  .btns .hint{
+    background-color:darkcyan;
+}
+.result{
+font-size: 20px;
+text-align: center;
+padding: 5px;
+border-radius: 6px;
+}
+.result span{
+color: #ff9d07;
+display: block;
+margin-top: 5px;
+font-weight: bold;
+font-size: 30px;
+position: relative;
+}
+.result span::before,
+.result span::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    background-color: #ff9d07;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+
+}
+.result span::after{
+    left: -10px;
+}
+.result span.fail{
+color: red;
+}
+.result span.fail::before,
+.result span.fail::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    background-color: red;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+
+}
+.result span::after{
+    left: -10px;
+    align-items: stretch;
+}
+
+.word .key{
+    flex: 1;
+    padding: 5px;
+    font-weight: bold;
+}
+.word .key h3{
+    text-align: center;
+}
+.word .key div:not(:last-child){
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    display: flex;
+}
+.word .key div:not(:last-child) span:first-child{
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+.rip{
+    background-color: #ff9d07;
+}
+.rnp{
+    background-color: #08a788;
+}
+.wnp{
+    background-color: #292f44;
+}
+
+.logo{
+background-color: #04182e;
+height: 480px;
+line-height: 500px;
+text-align: center;
+position: relative;
+}
+.logo::before{
+position: absolute;
+content: "Flex Box";
+color: #2c3e50;
+font-size: 160px;
+font-weight: bolder;
+z-index: 2;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+width: 100%;
+}
+
+h1{
+color: #fff;
+font-size: 80px;
+font-weight: bolder;
+position: relative;
+z-index: 3;
+}
